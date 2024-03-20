@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <title>Encriptador de texto</title>
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/Logo.png" alt="logo de alura">
+  </header>
+  <main>
+    <section>
+      <textarea name="text-area" class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+      <div>
+        <img src="images/bi_exclamation-circle-fill.svg" alt="">
+        <h6 class="informacion">Solo letras minúsculas y sin acentos.</h6>
+      </div>
+      <div class="botones">
+        <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+        <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+      </div>
+    </section>
+    <section>
+      <textarea name="text-mensaje" class="text-mensaje" cols="20" rows="10" id="idMensaje"></textarea>
+      <div id="idCuadros">
+        <h1 class="cuadro1">Ningún mensaje fue encontrado.</h1>
+        <p class="cuadro2">Ingresa el texto que deseas encriptar o desencriptar.</p>
+      </div>
+      <div>
+        <button class="btn-copiar" id="idCopiar" onclick="btnCopiar()">Copiar</button>
+        <button class="btn-reset" id="idReset" onclick="btnReset()">&#8634;</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+        <div class="container-icons">
+          <a href="https://github.com/edy-git" target="_blank" rel="noopener noreferrer"><img src="images/github.svg" alt="Logo de GitHub"></a>
+
+          <a href="https://www.linkedin.com/in/eduardo-argana-igs" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.svg" alt="Logo de LinkedIn"></a>
+        </div>
+        <div class="copyright">&#169; copyright 2024 || Todos los derechos reservados-Alura || Autor-Eduardo Argana R.</div>
+    </footer>
+  <script src="app.js"></script>
+</body>
+</html>
